@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShopEase — Collection</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Nav -->
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <h2>ShopEase</h2>
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="index.html#New-Arrival">New Arrival</a></li>
+            <li><a href="index.html#Most-Wanted">Most Wanted</a></li>
+            <li><a href="collection.html" class="active">Collection</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-icons">
+            <i class="fas fa-search"></i>
+            <a href="#">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+        </div>
+        <button>Signup</button>
+         <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+    </div>
+    </nav>
+    <!-- Offer Banner -->
+    <div class="offer-banner" id="offerBanner">
+    <span>
+        🎉 First Login Offer! Get <strong>20% OFF</strong> on your first order.
+    </span>
+
+    <button id="closeOffer">&times;</button>
+</div>
+
+</header>
+
+<div class="collection-wrap">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="filter-block">
+            <p class="filter-eyebrow mono">FILTER BY</p>
+            <h3>Occasion</h3>
+            <div class="filter-option">
+                <input type="checkbox" class="occ-filter" value="summer" id="occ-summer">
+                <label for="occ-summer">Summer</label>
+            </div>
+            <div class="filter-option">
+                <input type="checkbox" class="occ-filter" value="party" id="occ-party">
+                <label for="occ-party">Party</label>
+            </div>
+            <div class="filter-option">
+                <input type="checkbox" class="occ-filter" value="street" id="occ-street">
+                <label for="occ-street">Streetwear</label>
+            </div>
+            <div class="filter-option">
+                <input type="checkbox" class="occ-filter" value="casual" id="occ-casual">
+                <label for="occ-casual">Casual</label>
+            </div>
+        </div>
+
+        <div class="filter-block">
+            <h3>Colors</h3>
+            <div class="filter-option color-opt">
+                <input type="checkbox" class="color-filter" value="black" id="col-black" style="display:none">
+                <span class="color-dot" style="background:#111" onclick="document.getElementById('col-black').click()"></span>
+                <label for="col-black">Black</label>
+            </div>
+            <div class="filter-option color-opt">
+                <input type="checkbox" class="color-filter" value="blue" id="col-blue" style="display:none">
+                <span class="color-dot" style="background:#4a6fa5" onclick="document.getElementById('col-blue').click()"></span>
+                <label for="col-blue">Blue</label>
+            </div>
+            <div class="filter-option color-opt">
+                <input type="checkbox" class="color-filter" value="beige" id="col-beige" style="display:none">
+                <span class="color-dot" style="background:#c9a24b" onclick="document.getElementById('col-beige').click()"></span>
+                <label for="col-beige">Beige</label>
+            </div>
+            <div class="filter-option color-opt">
+                <input type="checkbox" class="color-filter" value="olive" id="col-olive" style="display:none">
+                <span class="color-dot" style="background:#7a9e6f" onclick="document.getElementById('col-olive').click()"></span>
+                <label for="col-olive">Olive</label>
+            </div>
+        </div>
+
+        <div class="filter-block">
+            <h3>Arrivals</h3>
+            <div class="filter-option">
+                <input type="checkbox" id="arr-week">
+                <label for="arr-week">This Week</label>
+            </div>
+            <div class="filter-option">
+                <input type="checkbox" id="arr-month">
+                <label for="arr-month">This Month</label>
+            </div>
+        </div>
+
+        <button id="clearFilters" class="mono" style="background:none;border:2px solid #111111;padding:10px 16px;font-size:12px;letter-spacing:1px;cursor:pointer;width:100%;">CLEAR FILTERS</button>
+
+    </aside>
+
+    <!-- Main -->
+    <main class="collection-main">
+
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search products...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <div class="collection-heading">
+            <h1>Full Collection</h1>
+            <p class="result-count mono" id="resultCount">SHOWING 6 OF 6 ITEMS</p>
+        </div>
+
+        
+
+        <div class="product-grid-n" id="productGrid">
+
+            <div class="product-tile" data-occasion="party street" data-color="black">
+                <div class="tile-img">
+                    <span class="tag-new mono">NEW</span>
+                    <i class="fa-regular fa-heart like-icon-n"></i>
+                    <img src="./images/products/product13.png" alt="Oversized Graphic Hoodie" class="garment-img">
+                </div>
+                <h4>Oversized Graphic Hoodie</h4>
+                <p class="n-price">₹1,499</p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-tile" data-occasion="casual street" data-color="beige">
+                <div class="tile-img">
+                    <i class="fa-regular fa-heart like-icon-n"></i>
+                    <img src="./images/products/product14.png" alt="Cargo Utility Pants" class="garment-img">
+                </div>
+                <h4>Cargo Utility Pants</h4>
+                <p class="n-price">₹1,899</p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-tile" data-occasion="summer casual" data-color="black">
+                <div class="tile-img">
+                    <span class="tag-new mono">NEW</span>
+                    <i class="fa-regular fa-heart like-icon-n"></i>
+                    <img src="./images/products/product15.png" alt="Boxy Fit Tee — Black" class="garment-img">
+                </div>
+                <h4>Boxy Fit Tee — Black</h4>
+                <p class="n-price">₹699</p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-tile" data-occasion="party street" data-color="olive">
+                <div class="tile-img">
+                    <i class="fa-regular fa-heart like-icon-n"></i>
+                    <img src="./images/products/product16.png" alt="Olive Bomber Jacket" class="garment-img">
+                </div>
+                <h4>Olive Bomber Jacket</h4>
+                <p class="n-price">₹2,599</p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-tile" data-occasion="casual street" data-color="blue">
+                <div class="tile-img">
+                    <i class="fa-regular fa-heart like-icon-n"></i>
+                    <img src="./images/products/product17.png" alt="Denim Track Jacket" class="garment-img">
+                </div>
+                <h4>Denim Track Jacket</h4>
+                <p class="n-price">₹2,199</p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-tile" data-occasion="summer casual" data-color="beige">
+                <div class="tile-img">
+                    <span class="tag-new mono">NEW</span>
+                    <i class="fa-regular fa-heart like-icon-n"></i>
+                    <img src="./images/products/product18.png" alt="Wide Leg Beige Trousers" class="garment-img">
+                </div>
+                <h4>Wide Leg Beige Trousers</h4>
+                <p class="n-price">₹1,699</p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+
+        </div>
+
+        <!-- Most Wanted -->
+        <section id="Most-Wanteds" style="margin-top:60px;">
+
+            <div class="collection-heading">
+                <h1>Most Wanted</h1>
+                <p class="result-count mono">8 TRENDING ITEMS</p>
+            </div>
+
+            <div class="product-grid-n">
+
+                <div class="product-tile" data-occasion="party" data-color="black">
+                    <div class="tile-img">
+                        <span class="tag-new mono">HOT</span>
+                        <i class="fa-regular fa-heart like-icon-n"></i>
+                        <img src="images/products/product5.png" alt="Silk Saree" class="garment-img">
+                    </div>
+                    <h4>Silk Saree</h4>
+                    <p class="n-price">₹3,299</p>
+                    <button class="add-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-tile" data-occasion="party" data-color="beige">
+                    <div class="tile-img">
+                        <i class="fa-regular fa-heart like-icon-n"></i>
+                        <img src="images/products/product6.png" alt="Off-Shoulder Dress" class="garment-img">
+                    </div>
+                    <h4>Off-Shoulder Dress</h4>
+                    <p class="n-price">₹1,799</p>
+                    <button class="add-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-tile" data-occasion="casual" data-color="olive">
+                    <div class="tile-img">
+                        <i class="fa-regular fa-heart like-icon-n"></i>
+                        <img src="images/products/product7.png" alt="Palazzo Co-ord Set" class="garment-img">
+                    </div>
+                    <h4>Palazzo Co-ord Set</h4>
+                    <p class="n-price">₹1,499</p>
+                    <button class="add-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-tile" data-occasion="casual summer" data-color="beige">
+                    <div class="tile-img">
+                        <span class="tag-new mono">HOT</span>
+                        <i class="fa-regular fa-heart like-icon-n"></i>
+                        <img src="images/products/product8.png" alt="Casual Wrap Dress" class="garment-img">
+                    </div>
+                    <h4>Casual Wrap Dress</h4>
+                    <p class="n-price">₹1,299</p>
+                    <button class="add-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-tile" data-occasion="party street" data-color="black">
+                    <div class="tile-img">
+                        <i class="fa-regular fa-heart like-icon-n"></i>
+                        <img src="images/products/product9.png" alt="Men's Formal Shirt" class="garment-img">
+                    </div>
+                    <h4>Men's Formal Shirt</h4>
+                    <p class="n-price">₹1,199</p>
+                    <button class="add-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-tile" data-occasion="party" data-color="blue">
+                    <div class="tile-img">
+                        <i class="fa-regular fa-heart like-icon-n"></i>
+                        <img src="images/products/product10.png" alt="Men's Kurta Pajama" class="garment-img">
+                    </div>
+                    <h4>Men's Kurta Pajama</h4>
+                    <p class="n-price">₹1,599</p>
+                    <button class="add-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-tile" data-occasion="party" data-color="beige">
+                    <div class="tile-img">
+                        <span class="tag-new mono">HOT</span>
+                        <i class="fa-regular fa-heart like-icon-n"></i>
+                        <img src="images/products/product11.png" alt="Kids Party Frock" class="garment-img">
+                    </div>
+                    <h4>Kids Party Frock</h4>
+                    <p class="n-price">₹899</p>
+                    <button class="add-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-tile" data-occasion="casual summer" data-color="olive">
+                    <div class="tile-img">
+                        <i class="fa-regular fa-heart like-icon-n"></i>
+                        <img src="images/products/product12.png" alt="Kids T-Shirt Set" class="garment-img">
+                    </div>
+                    <h4>Kids T-Shirt Set</h4>
+                    <p class="n-price">₹599</p>
+                    <button class="add-cart">Add to Cart</button>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<!-- Footer -->
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <h3>ShopEase</h3>
+            <p>Streetwear built for movement. Bold cuts, raw fabrics, and a look that doesn't ask for permission.</p>
+            <div class="footer-socials">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#New-Arrival">New Arrival</a></li>
+                <li><a href="index.html#Most-Wanted">Most Wanted</a></li>
+                <li><a href="collection.html">Collection</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Customer Service</h4>
+            <ul>
+                <li><a href="#">Track Order</a></li>
+                <li><a href="#">Returns &amp; Exchange</a></li>
+                <li><a href="#">Shipping Info</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Get In Touch</h4>
+            <ul class="footer-contact">
+                <li><i class="fa-solid fa-location-dot"></i> Trichy, Tamil Nadu, India</li>
+                <li><i class="fa-solid fa-phone"></i> +91 98765 43210</li>
+                <li><i class="fa-solid fa-envelope"></i> support@ShopEase.com</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 ShopEase. All Rights Reserved.</p>
+    </div>
+
+</footer>
+<script src="index.js"></script>
+</body>
+</html>
