@@ -819,7 +819,7 @@ section h2{
 }
 @media(max-width:768px){
     .brands-container{
-        justify-content:center;
+        justify-content:flex-start;
     }
     .experience-header h2{
         font-size:26px;
@@ -1479,8 +1479,10 @@ section h2{
     }
 
     .about-img img{
-        height:320px;
-        width: 100%;
+        width:100%;
+        height:auto;
+        object-fit:contain;   /* cover -> contain */
+        display:block;
     }
 
     .about-content h2{
