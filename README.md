@@ -1,1 +1,1 @@
-# ShopEase--E-Commerce
+# ShopEase-E-Commerce
